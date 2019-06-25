@@ -20,4 +20,10 @@ public class FizzBussTests {
         int number=6;
         Assertions.assertEquals("fizz",fizzBuss.of(number));
     }
+    @Test
+    public void shouldReturnFizzBuzzIfGetFifteen(){
+        FizzBuss fizzBuss=new FizzBuss();
+        int number=15;
+        Assertions.assertEquals("fizzbuzz",fizzBuss.of(number));
+    }
 }
