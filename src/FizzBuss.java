@@ -9,8 +9,10 @@ public class FizzBuss {
             return FIZZBUZZ;
         else if(isDivisibleByThree(i))
             return FIZZ;
-        else
+        else if(isDivisibleByFive(i))
             return BUZZ;
+        else
+            return null;
     }
 
     private boolean isDivisibleByFive(int i) {
