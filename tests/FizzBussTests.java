@@ -6,12 +6,12 @@ public class FizzBussTests {
     public void shouldreturnFizzifGetThree(){
         FizzBuss fizzBuss=new FizzBuss();
         int number=3;
-        Assertions.assertEquals("fizz",fizzBuss.of(3));
+        Assertions.assertEquals("fizz",fizzBuss.of(number));
     }
     @Test
     public void shouldRetrunBuzzIfGetFive(){
         FizzBuss fizzBuss=new FizzBuss();
-        int number=3;
-        Assertions.assertEquals("buzz",fizzBuss.of(3));
+        int number=5;
+        Assertions.assertEquals("buzz",fizzBuss.of(number));
     }
 }
