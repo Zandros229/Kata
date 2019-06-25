@@ -4,7 +4,7 @@ public class FizzBuss {
     public static final String BUZZ = "buzz";
 
     public String of(int i) {
-        if(i==3)
+        if(i%3==0)
             return FIZZ;
         else
             return BUZZ;
