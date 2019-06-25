@@ -5,7 +5,7 @@ public class FizzBuss {
     public static final String FIZZBUZZ = "fizzbuzz";
 
     public String of(int i) {
-        if(isDivisibleByThree(i)&& isDivisibleByFive(i))
+        if(isDivisibleByFifteen(i))
             return FIZZBUZZ;
         else if(isDivisibleByThree(i))
             return FIZZ;
@@ -13,6 +13,10 @@ public class FizzBuss {
             return BUZZ;
         else
             return null;
+    }
+
+    private boolean isDivisibleByFifteen(int i) {
+        return isDivisibleByThree(i)&& isDivisibleByFive(i);
     }
 
     private boolean isDivisibleByFive(int i) {
