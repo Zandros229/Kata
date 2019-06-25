@@ -4,9 +4,13 @@ public class FizzBuss {
     public static final String BUZZ = "buzz";
 
     public String of(int i) {
-        if(i%3==0)
+        if(isDivisibleByThree(i))
             return FIZZ;
         else
             return BUZZ;
+    }
+
+    private boolean isDivisibleByThree(int i) {
+        return i%3==0;
     }
 }
