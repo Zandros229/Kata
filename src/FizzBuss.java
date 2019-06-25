@@ -2,14 +2,19 @@ public class FizzBuss {
 
     public static final String FIZZ = "fizz";
     public static final String BUZZ = "buzz";
+    public static final String FIZZBUZZ = "fizzbuzz";
 
     public String of(int i) {
-        if(isDivisibleByThree(i)&&(i%5==0))
-            return "fizzbuzz";
+        if(isDivisibleByThree(i)&& isDivisibleByFive(i))
+            return FIZZBUZZ;
         else if(isDivisibleByThree(i))
             return FIZZ;
         else
             return BUZZ;
+    }
+
+    private boolean isDivisibleByFive(int i) {
+        return i%5==0;
     }
 
     private boolean isDivisibleByThree(int i) {
