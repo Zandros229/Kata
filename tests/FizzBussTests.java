@@ -26,4 +26,11 @@ public class FizzBussTests {
         int number=15;
         Assertions.assertEquals("fizzbuzz",fizzBuss.of(number));
     }
+    @Test
+    public void shouldReturnNullIfGetSeven(){
+        FizzBuss fizzBuss=new FizzBuss();
+        int number=7;
+        Assertions.assertEquals(null,fizzBuss.of(number));
+    }
+
 }
