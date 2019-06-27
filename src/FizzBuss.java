@@ -3,16 +3,19 @@ public class FizzBuss {
     public static final String FIZZ = "fizz";
     public static final String BUZZ = "buzz";
     public static final String FIZZBUZZ = "fizzbuzz";
+    public static final int FIFTEEN = 15;
+    public static final int THREE = 3;
+    public static final int FIVE = 5;
 
     public String of(int i) {
         switch (isDivisible(i)) {
-            case 15: {
+            case FIFTEEN: {
                 return FIZZBUZZ;
             }
-            case 3: {
+            case THREE: {
                 return FIZZ;
             }
-            case 5:{
+            case FIVE:{
                 return BUZZ;
             }
             default: {
