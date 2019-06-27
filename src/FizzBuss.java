@@ -5,14 +5,30 @@ public class FizzBuss {
     public static final String FIZZBUZZ = "fizzbuzz";
 
     public String of(int i) {
+        switch (isDivisible(i)) {
+            case 15: {
+                return FIZZBUZZ;
+            }
+            case 3: {
+                return FIZZ;
+            }
+            case 5:{
+                return BUZZ;
+            }
+            default: {
+                return null;
+            }
+        }
+    }
+    private int isDivisible(int i){
         if(isDivisibleByFifteen(i))
-            return FIZZBUZZ;
+            return 15;
         else if(isDivisibleByThree(i))
-            return FIZZ;
+            return 3;
         else if(isDivisibleByFive(i))
-            return BUZZ;
+            return 5;
         else
-            return null;
+            return 0;
     }
 
     private boolean isDivisibleByFifteen(int i) {
